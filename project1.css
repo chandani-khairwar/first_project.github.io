@@ -1,0 +1,1142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*
+		{
+			margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; font-family: "Poppins" , sans-serif;
+		}
+
+		nav
+		{
+			/*padding: 10px;*/ background: rgba(0, 0, 0, 0.4); position: fixed; width: 100%; z-index: 1;
+		}
+
+       .container{ padding: 15px; /*background: red;*/ margin: auto; max-width: 1200px; width: 100%; 
+                   display: flex; justify-content: space-between; align-items: center;
+                 }
+        .fa-bars{ color: white!important; font-size: 26px!important; }
+
+        #chk,.bar{ display: none;  cursor: pointer;}
+
+        
+
+        .ulist{ display: flex;  }
+        .ulist li{ padding: 15px 15px; list-style: none; transition: 0.7s;
+              position: relative; border-radius: 5px; }
+              .ulist li:hover{ background: grey; }
+        .ulist li a{ color: white; }
+
+        .logo
+                  {
+                    width: 250px;
+                    /*padding: 20px;*/
+                    /*background: cyan;*/
+                    display: flex;
+                    align-items: center;
+                    
+
+                  }
+                  .part1 
+                  {
+                    width: 60px;
+                    height: 60px;
+                    background: mediumseagreen;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 60px;
+                    font-size: 25px;
+                    color: white;
+                  }
+
+                  .part1 a
+                  {
+                    color: white;
+                  }
+                  .part2
+                  {
+                    color: white;
+                    font-size: 38px;
+                    
+                    
+                  }
+                  .part2 a 
+                  {
+                    color: white;
+                  }
+                  .inner 
+                  {
+                    display: none;
+                  }
+                  .inner 
+                  {
+                    width: 180px; 
+                    background: rgba(0, 0, 0, 0.4);
+                    position: absolute;
+                               left: 0;
+                               top: 100%;
+                               text-align: center;
+                  }
+
+                  .inner li{ width: 100%; text-align: center; }
+
+                     .ulist li:hover .inner{ display: block;}
+
+ @media(max-width: 780px)
+          {
+                  	  .bar{ display: block; }
+                  	  .ulist{ position: fixed; top: 70px; background: rgba(0, 0, 0, 0.4); width: 100%; flex-direction: column; left: -100%; transition: 1s; }
+                  	  .ulist li{ padding: 15px; text-align: center; }
+                  	  #chk:checked ~ .ulist{ left: 0; }
+
+
+
+          }
+
+/* ------------------------------------------------------------------------ */
+
+#home 
+        
+         {
+          	width: 100%;
+          	height: 100vh;
+          	background-image: url(uni2.jpg);
+          	background-position: center;
+          	background-size: cover;
+
+          }
+html 
+        
+         {
+            scroll-behavior: smooth;
+        }
+
+
+.cover 
+      
+       {
+          	width: 100%;
+          	height: 100vh;
+          	background-color: rgba(0, 0, 0, 0.6);
+          	display: flex;
+          	justify-content: center;
+          	align-items: center;
+            
+          }
+
+ .center 
+
+          {
+          	max-width: 800px;
+          	width: 100%;
+          	padding: 20px;
+/*          	background-color: red;*/
+
+          }
+
+ .center h1 
+
+
+          {
+            font-size: 45px;
+            color: white;
+            text-align: center;
+          }
+
+
+
+ .center p 
+
+
+          {
+            font-size:14px;
+            color: lightgray;
+            text-align: center;
+            margin-top: 30px;
+          }
+
+          
+  .btn 
+
+     {
+          width: 350px;
+          height: 85px;
+          background: orangered;
+          margin: auto;
+          margin-top: 30px;
+          text-align: center;
+          line-height: 85px;
+          border-radius: 15px;
+
+  }
+  .btn a 
+
+{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+
+  }
+
+.btn:hover 
+
+    {
+        background-color: gray;
+
+    }
+
+
+  .btn:hover a 
+            {
+              color: black;
+            }
+
+  /*------------------------------------------------------------*/
+
+  #about 
+  {
+          width: 100%;
+      /*    height: 100vh;*/
+          background: gray;
+          padding: 10px;
+
+} 
+
+  .mainabout 
+  {
+          width: 100%;
+          height: 50%;
+          background: white;
+          padding-top: 10px;
+  }
+
+  .abouthed 
+  {
+          padding: 10px;
+          width: 100%;
+          max-width: 1200px;
+          /*background: red;*/
+          /*height: 50%;*/
+          margin: auto;
+          text-align: center;
+          color: gray;
+          font-family: sans-serif;
+          text-transform: capitalize;
+          font-size: 30px;
+          word-spacing: 2px;
+          letter-spacing: 2px;
+          line-height: 1.4;
+  }
+
+  .aboutlin 
+  {
+          width: 170px;
+          height: 5px;
+          background: mediumseagreen;
+          border-radius: 6px;
+          margin: auto;
+          margin-top: 30px;
+  }
+
+  .aboutbtn 
+  {
+          width: 200px;
+          height: 50px;
+          background: mediumseagreen;
+          margin: auto;
+          margin-top: 50px;
+          border-radius: 8px;
+          font-size: 15px;
+          text-transform: uppercase;
+          line-height: 50px;
+          transition: 0.5s;
+
+
+  }
+  .aboutbtn:hover 
+  {
+    background-color: gray;
+  }
+  .aboutbtn:hover a 
+  {
+    color: black;
+  }
+  .aboutbtn a 
+  {
+    color: white;
+    
+    text-align: center;
+  }
+
+  .aboutbotm 
+  {
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+    /*background: magenta;*/
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+  .ab 
+  {
+    width: calc(25% - 10px);
+    padding: 10px;
+    /*background: maroon;*/
+
+
+  }
+  .ab2 
+  {
+    width: calc(75% - 10px);
+    padding: 10px;
+    /*background: maroon;*/
+  }
+
+  .abhed 
+  {
+    color: white;
+    font-size: 25px;
+    margin-top: 80px;
+  }
+
+  .aboutlin2
+
+  {
+    width: 170px;
+    height: 5px;
+    background: white;
+    border-radius: 6px;
+    
+    margin-top: 30px;
+  }
+
+  .abpr 
+  {
+    color: white;
+    margin-top: 80px;
+    line-height: 1.5;
+  }
+
+  /*----------------------------------------------------------==*/
+
+  #portfolio 
+  {
+            width: 100%;
+        /*    height: 100vh;*/
+        padding: 10px;
+            /*background: gold;*/
+  }
+
+  .porthed 
+  {
+        width: 100%;
+        max-width: 1200px;
+        /*background: cyan;*/
+        padding: 10px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+  }
+  .phedpart 
+  {
+    width: calc(50% - 10px);
+    padding: 10px;
+    /*background: green;*/
+  }
+
+  .porthed h1 
+  {
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .portlin3
+
+  {
+    width: 170px;
+    height: 5px;
+    background: black;
+    border-radius: 6px;
+    
+    margin-top: 30px;
+  }
+  .pr 
+  {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    color: black;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+
+  .pcolor 
+  {
+    background: mediumseagreen;
+    border-radius: 3px;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  .portgallery 
+  {
+    width: 100%;
+    max-width: 1200px;
+    /*background: pink;*/
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .pgpart 
+  {
+    width: calc(25% - 10px);
+    /*padding: 10px;*/
+    /*background: lightblue;*/
+    margin: 5px;
+    position: relative;
+  }
+  .gimg 
+  {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .pgpart:before 
+  {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .pgpart:hover::before 
+    {
+      opacity: 1;
+  }
+  .pgpart:after 
+  {
+    position: absolute;
+    content: 'Clike Here to More Details';
+    width: 100%;
+    height: 20%;
+    background: firebrick;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    opacity: 0;
+    transition: 1s;
+  }
+  .pgpart:hover::after 
+  {
+    opacity: 1;
+  }
+  .sog 
+  {
+    padding: 10px;
+    /*background: gray;*/
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+   
+    
+    transition: 1s;
+  }
+  .sog i 
+  {
+    color: white;
+    font-size: 25px;
+    
+  }
+
+  .pgpart:hover .sog 
+  {
+    opacity: 1;
+  }
+
+  #our-team 
+  {
+    width: 100%;
+/*    height: 100vh;*/
+padding: 10px;
+    /*background: cyan;*/
+    padding-top: 10px;
+  }
+  .ourhed 
+  {
+    width: 100%;
+    max-width: 1200px;
+    /*background: gray;*/
+    /*padding: 10px;*/
+    margin: auto;
+  }
+
+
+  .ourhed h2 
+  {
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .ourhed2 
+  {
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+    background: mediumseagreen;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .ourhed2part 
+  {
+   width: calc(50% - 10px);
+
+    /*padding: 10px;*/
+    /*background: pink;*/
+    margin: 5px;
+    
+    padding-bottom: 20px;
+
+  }
+  .ourhedimg 
+  {
+    width: 100px;
+    height: 100px;
+    background: mediumseagreen;
+    position: absolute;
+    border-radius: 50%;
+    top: -50px;
+    left: 40%;
+    transform: translatex(-50px);
+    padding: 5px;
+  }
+  .ourhedimg img 
+  {
+    height: 100%;
+    width: 100%;
+  }
+
+  .ni 
+  {
+    color: white;
+    font-size: 20px;
+    
+
+  }
+  .da 
+  {
+    color: white;
+    margin-top: 20px;
+  }
+  .pl 
+  {
+    color: white;
+    text-align: justify;
+    
+  }
+
+  .ourteam-botom 
+  {
+    width: 100%;
+    /*padding: 10px;*/
+    max-width: 1200px;
+    /*background: brown;*/
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .ourtgallery 
+  {
+    width: 100%;
+    max-width: 1200px;
+    /*background: blue;*/
+    /*padding: 10px;*/
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .ourgpart 
+  {
+    width: calc(25% - 10px);
+    /*padding: 10px;*/
+    /*background-color: lightblue;*/
+    margin: 5px;
+    position: relative;
+  }
+
+  .otg 
+  {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+
+  .ourgpart:before 
+  {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+
+  }
+  .ourgpart:hover::before 
+  {
+    opacity: 1;
+  }
+
+.sot 
+{
+  /*padding: 10px;*/
+  /*background: gold;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+
+}
+
+.sotc
+{
+  background-color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  margin: 3px;
+  text-align: center;
+  line-height: 28px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 1s;
+
+}
+.ourgpart:hover .sotc 
+{
+  opacity: 1;
+}
+
+.ourgpart:after 
+{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 20%;
+  background: mediumseagreen;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  
+}
+.lph 
+{
+  /*padding: 10px;*/
+  /*background: white;*/
+  position: absolute;
+  top: 90%;
+  left: 50%;
+   z-index: 1;
+   transform: translate(-50%,-50%);
+   color: white;
+   line-height: 1.1;
+   font-size: 17px;
+}
+
+/*---------------------------------*/
+
+#contact 
+{
+  width: 100%;
+  padding: 10px;
+  background-image: url(cnt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contmain
+{
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------------------------------------------------*/
+#service 
+{
+  width: 100%;
+/*  height: 100vh;*/
+padding: 10px;
+  /*background: coral;*/
+}
+
+.servicemain 
+{
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px;
+  /*background: green;*/
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+ align-items: center;
+  flex-wrap: wrap;
+}
+.servicepart 
+{
+  width: calc(33.3% - 10px);
+  /*padding: 10px;*/
+  /*background: cyan;*/
+  margin: 5px;
+}
+
+.sborder 
+{
+ width: 70px;
+ height: 70px;
+ /*background: skyblue;*/
+ margin: auto;
+ text-align: center;
+
+}
+.sborder i 
+{
+font-size: 45px;
+color: black;
+padding-bottom: 20px;
+line-height: 70px;
+}
+
+.servicepart h4,.srp 
+{
+  margin-top: 20px;
+  text-align: center;
+  color: gray;
+}
+/*------------------------------------------------------*/
+#contactus 
+{
+  width: 100%;
+/*  height: 100vh;*/
+padding: 10px;
+  background: white;
+}
+.ushed 
+{
+  width: 100%;
+  background: gray;
+  padding: 10px;
+}
+.ush 
+{
+  width: 100%;
+  max-width: 1200px;
+  /*padding: 10px;*/
+  /*background: blue;*/
+  margin: auto;
+  color: white;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.usmain 
+{
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px;
+  /*background: gray;*/
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.uspart 
+{
+  width: calc(50% - 10px);
+  /*padding: 10px;*/
+  /*background: lightblue;*/
+  margin: 5px;
+
+}
+table 
+{
+  border-collapse: collapse;
+  width: 100%;
+  cursor: pointer;
+}
+th 
+{
+  padding: 25px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  color:gray;
+  font-size: 15px;
+
+}
+
+tr
+{
+  transition: 1s;
+}
+tr:hover {background-color:lightgray; color: white;}
+.usbtn 
+{
+  width: 80px;
+  height: 40px;
+  background: orangered;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px;
+  transition: 0.8s;
+}
+.usbtn:hover 
+{
+  background: gray;
+  color: black;
+}
+
+.usb 
+{
+  color: gray;
+  font-family: sans-serif;
+
+}
+.usp 
+{
+  color: gray;
+  margin-top: 30px;
+}
+.usso1
+{
+  color: gray;
+  
+}
+.usso i
+{
+  padding-left: 10px;
+  color: gray;
+  margin-top: 30px;
+}
+/*---------------------------------------------------*/
+.last1 
+{
+  width: 100%;
+  /*padding: 10px;*/
+  background: gray;
+  text-align: center;
+
+}
+.last 
+{
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px;
+  /*background: blue;*/
+  margin: auto;
+  color: white;
+}
+
+ /*--------------------------------------------------------------*/
+
+  @media (max-width: 950px)
+  {
+
+     .btn 
+              {
+                width: 250px;
+                height: 70px;
+                line-height: 70px;
+                
+                
+              }
+     .btn a 
+     {
+      font-size: 20px;
+     }
+      
+
+    .abouthed h1 
+    {
+      font-size: 30px;
+
+    }
+    .mainabout 
+    {
+      padding-top: 0px;
+
+    }
+    .aboutbotm
+    {
+      flex-direction: column;
+    }
+    .ab 
+    {
+      width: 100%;
+      margin: 5px;
+    }
+    .ab2 
+    {
+      width: 100%;
+      margin: 5px;
+    }
+    .abhed
+    {
+      text-align: center;
+      margin-top: 0px;
+    }
+    .aboutlin2 
+    {
+      margin: auto;
+      margin-top: 5px;
+    }
+    .portlin3
+    {
+      margin: auto;
+      margin-top: 20px;
+    }
+    
+
+    #portfolio 
+    {
+      height: auto;
+    }
+
+    .porthed 
+    {
+      flex-direction: column;
+
+    }
+   
+    .phedpart 
+    {
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    .pgpart
+    {
+      width: calc(50% - 10px);
+    }
+
+    .ourhedimg 
+    {
+      left: 50%;
+
+    }
+
+    .ourhed2part 
+    {
+      width: 100%;
+    }
+
+    .ourhed2part 
+    {
+      text-align: center;
+    }
+
+   .pl 
+    {
+      text-align: center;
+    }
+
+    .ourgpart 
+    {
+      width: calc(50% - 10px);
+   
+
+    }
+
+    #our-team 
+    {
+      height: auto;
+    }
+
+    .servicepart 
+    {
+      width: calc(50% - 10px);
+    }
+
+    #service 
+    {
+      height: auto;
+    }
+}
+  
+
+/*------------------------------------*/
+
+@media (max-width: 600px)
+{
+
+  .part2,.part1 
+  {
+    font-size: 16px;
+  }
+
+  .center h1 
+          {
+            font-size: 25px;
+            
+          }
+
+  
+
+   .portlin3
+    {
+      margin: auto;
+      margin-top: 20px;
+    }
+    .abpr 
+    {
+      margin-top: 0px;
+      text-align: justify;
+    }
+
+    .porthed 
+    {
+      flex-direction: column;
+
+    }
+    .phedpart 
+    {
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+    }
+    .pr 
+    {
+      padding: 10px;
+      font-size: 13px;
+    }
+
+    .pgpart 
+    {
+      width: 100%;
+    }
+
+     #portfolio 
+    {
+      height: auto;
+    }
+
+    .ourhed2 
+    {
+      flex-direction: column;
+    }
+    .ourhed2part 
+    {
+      width: 100%;
+    }
+
+    
+
+    .ourhedimg 
+    {
+      left: 50%;
+
+    }
+
+    .ourhed2part 
+    {
+      text-align: center;
+    }
+
+   .pl 
+    {
+      text-align: center;
+    }
+
+    .ourgpart 
+    {
+      width: 100%;
+       
+
+    }
+    #our-team 
+    {
+      height: auto;
+    }
+
+    .servicemain
+    {
+      flex-direction: column;
+    }
+
+    
+    .servicepart 
+    {
+      width: 100%;
+    }
+
+    .ush 
+    {
+      font-size: 20px;
+    }
+
+    .uspart 
+    {
+      width: 100%;
+      text-align: center;
+    }
+    .last1
+    {
+      margin-top: 5px;
+    }
+    .last 
+    {
+      text-align: center;
+
+    }
+    #contactus
+    {
+     height: auto;
+    }
+
+}
+  
+
+ 
